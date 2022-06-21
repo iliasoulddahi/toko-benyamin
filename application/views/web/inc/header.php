@@ -29,15 +29,15 @@
             <div class="header_top_right">
                 <div class="search_box">
                     <form method="get" action="<?php echo base_url('search')?>">
-                        <input type="text" placeholder="Search for Products" name="search">
-                        <input type="submit" value="SEARCH">
+                        <input type="text" placeholder="Cari Produk" name="search">
+                        <input type="submit" value="Cari">
                     </form>
                 </div>
                 <div class="shopping_cart">
                     <div class="cart">
                         <a href="<?php echo base_url('cart');?>" title="View my shopping cart" rel="nofollow">
                             <span class="cart_title">Cart</span>
-                            <span class="no_product">(<?php echo $this->cart->total_items();?> Items)</span>
+                            <span class="no_product">(<?php echo $this->cart->total_items();?> Produk)</span>
                         </a>
                     </div>
                 </div>
@@ -45,10 +45,10 @@
                 $customer_id = $this->session->userdata('customer_id');
                 if ($customer_id) {
                     ?>
-                    <div class="login"><a href="<?php echo base_url('/customer/logout'); ?>">Logout</a></div>
+                    <div class="login"><a href="<?php echo base_url('/customer/logout'); ?>">Keluar</a></div>
                 <?php } else {
                     ?>
-                    <div class="login"><a href="<?php echo base_url('/customer/login'); ?>">login</a></div>
+                    <div class="login"><a href="<?php echo base_url('/customer/login'); ?>">Login</a></div>
 
                     <?php
                 }
