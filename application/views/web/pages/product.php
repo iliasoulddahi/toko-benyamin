@@ -4,7 +4,7 @@
     <div class="content">
         <div class="content_top">
             <div class="heading">
-                <h3>Shop Page</h3>
+                <h3>Semua Produk</h3>
             </div>
             <div class="clear"></div>
         </div>

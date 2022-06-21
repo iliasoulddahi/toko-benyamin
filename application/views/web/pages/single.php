@@ -30,7 +30,7 @@
 
             </div>
             <div class="rightsidebar span_3_of_1">
-                <h2>CATEGORIES</h2>
+                <h2>Kategori</h2>
                 <ul>
                     <?php foreach($get_all_category as $single_category){?>
                     <li><a href="<?php echo base_url('get/category/'.$single_category->id);?>"><?php echo $single_category->category_name?></a></li>
