@@ -8,13 +8,13 @@
                 <?php if ($this->cart->total_items()) { ?>
                     <table class="tblone">
                         <tr>
-                            <th width="5%">Sr.</th>
-                            <th width="30%">Product Name</th>
-                            <th width="10%">Image</th>
-                            <th width="15%">Price</th>
-                            <th width="20%">Quantity</th>
-                            <th width="15%">Total Price</th>
-                            <th width="5%">Remove</th>
+                            <th width="5%">No.</th>
+                            <th width="30%">Nama Produk</th>
+                            <th width="10%">Gambar</th>
+                            <th width="15%">Harga</th>
+                            <th width="20%">Jumlah</th>
+                            <th width="15%">Harga Total</th>
+                            <th width="5%">Batal</th>
                         </tr>
                         <?php
                         $i = 0;
@@ -25,7 +25,7 @@
                                 <td><?php echo $i; ?></td>
                                 <td><?php echo $cart_items['name'] ?></td>
                                 <td><img src="<?php echo base_url('uploads/' . $cart_items['options']['product_image']) ?>" alt=""/></td>
-                                <td>Tk. <?php echo $this->cart->format_number($cart_items['price']) ?></td>
+                                <td>Rp. <?php echo $this->cart->format_number($cart_items['price']) ?></td>
                                 <td>
                                     <form action="<?php echo base_url('update/cart'); ?>" method="post">
                                         <input type="number" name="qty" value="<?php echo $cart_items['qty'] ?>"/>
@@ -33,7 +33,7 @@
                                         <input type="submit" name="submit" value="Update"/>
                                     </form>
                                 </td>
-                                <td>Tk. <?php echo $this->cart->format_number($cart_items['subtotal']) ?></td>
+                                <td>Rp. <?php echo $this->cart->format_number($cart_items['subtotal']) ?></td>
                                 <td>
                                     <form action="<?php echo base_url('remove/cart'); ?>" method="post">
                                         <input type="hidden" name="rowid" value="<?php echo $cart_items['rowid'] ?>"/>
@@ -47,12 +47,12 @@
                     </table>
                     <table style="float:right;text-align:left;" width="40%">
                         <tr>
-                            <th>Sub Total : </th>
-                            <td>TK. <?php echo $this->cart->format_number($this->cart->total()) ?></td>
+                            <th>Harga : </th>
+                            <td>Rp. <?php echo $this->cart->format_number($this->cart->total()) ?></td>
                         </tr>
                         <tr>
-                            <th>VAT : </th>
-                            <td>TK. 
+                            <th>Pengiriman : </th>
+                            <td>Rp. 
                                 <?php
                                 $total = $this->cart->total();
                                 $tax = ($total * 15) / 100;
@@ -61,8 +61,8 @@
                             </td>
                         </tr>
                         <tr>
-                            <th>Grand Total :</th>
-                            <td>TK. <?php echo $this->cart->format_number($tax + $this->cart->total()); ?> </td>
+                            <th>Total Dibayarkan :</th>
+                            <td>Rp. <?php echo $this->cart->format_number($tax + $this->cart->total()); ?> </td>
                         </tr>
                     </table>
                     <?php
