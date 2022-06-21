@@ -36,7 +36,7 @@
                 <div class="shopping_cart">
                     <div class="cart">
                         <a href="<?php echo base_url('cart');?>" title="View my shopping cart" rel="nofollow">
-                            <span class="cart_title">Cart</span>
+                            <span class="cart_title">Keranjang</span>
                             <span class="no_product">(<?php echo $this->cart->total_items();?> Produk)</span>
                         </a>
                     </div>

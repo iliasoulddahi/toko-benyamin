@@ -5,7 +5,7 @@
     <div class="content">
         <div class="content_top">
             <div class="heading">
-                <h3>Feature Products</h3>
+                <h3>Pilihan Produk</h3>
             </div>
             <div class="clear"></div>
         </div>
@@ -28,7 +28,7 @@
 
         <div class="content_bottom">
             <div class="heading">
-                <h3>New Products</h3>
+                <h3>Produk Baru</h3>
             </div>
             <div class="clear"></div>
         </div>

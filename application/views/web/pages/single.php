@@ -11,7 +11,7 @@
                     <h2><?php echo $get_single_product->product_title?></h2>
                     <p><?php echo $get_single_product->product_short_description?></p>					
                     <div class="price">
-                        <p>Price: <span><?php echo $this->cart->format_number($get_single_product->product_price)?> Tk</span></p>
+                        <p>Price: <span>Rp. <?php echo $this->cart->format_number($get_single_product->product_price)?></span></p>
                         <p>Category: <span><?php echo $get_single_product->category_name?></span></p>
                         <p>Brand:<span><?php echo $get_single_product->brand_name?></span></p>
                     </div>
@@ -24,7 +24,7 @@
                     </div>
                 </div>
                 <div class="product-desc">
-                    <h2>Product Details</h2>
+                    <h2>Detail Produk</h2>
                     <p><?php echo $get_single_product->product_long_description?></p>
                 </div>
 

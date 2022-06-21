@@ -4,7 +4,7 @@
     <div class="content">
         <div class="cartoption">		
             <div class="cartpage">
-                <h2>Your Cart</h2>
+                <h2>Keranjang</h2>
                 <?php if ($this->cart->total_items()) { ?>
                     <table class="tblone">
                         <tr>
@@ -67,7 +67,7 @@
                     </table>
                     <?php
                 } else {
-                    echo "<h1>Your Cart Empty</h1>";
+                    echo "<h1>Keranjang Anda Kosong</h1>";
                 }
                 ?>
             </div>
